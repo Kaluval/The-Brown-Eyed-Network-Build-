@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": "off",
+    "disown-opener": "off",
+    "css-prefix-order": "off"
+  }
+}

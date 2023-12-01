@@ -3,7 +3,9 @@
   background-position: 50% 50%;
   min-height: 695px;
 }
-
+*{
+  scroll-behavior: smooth;
+}
 .u-section-1 .u-text-1 {
   text-shadow: 0px 0px 0px rgba(0,0,0,0);
   --animation-custom_in-translate_x: -300px;
