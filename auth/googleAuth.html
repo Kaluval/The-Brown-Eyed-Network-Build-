@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Auth App</title>
+</head>
+<body>
+    <button id="signInButton">Create Account / Sign In</button>
+    <button id="signOutButton">Sign Out</button>
+
+    <div id="message">
+        <p>You have signed in</p>
+    </div>
+   
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        import {getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCqCov2mNwJkFND7GEN8ZMBbc1-8WvYQsI",
+          authDomain: "the-brown-eyed-network.firebaseapp.com",
+          projectId: "the-brown-eyed-network",
+          storageBucket: "the-brown-eyed-network.appspot.com",
+          messagingSenderId: "434173466288",
+          appId: "1:434173466288:web:f807dc9edb6ed9fa544d75",
+          measurementId: "G-KL4TS745BN"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth();
+        const analytics = getAnalytics(app);
+        const provider = new GoogleAuthProvider()
+
+        const signInButton = document.getElementById("signInButton");
+        const signOutButton = document.getElementById("signOutButton");
+        const message = document.getElementById("message");
+
+        signOutButton.style.display = "none";
+        message.style.display = "none";
+
+        const userSignIn = async() => {
+            signInWithPopup(auth, provider)
+            .then((result) => {
+                const user = result.user
+                console.log(user);
+
+            }).catch((error) =>{
+                const errorCode = error.code;
+                const errorMessage = error.message
+            })
+        }
+
+        const userSignOut = async() => {
+            signOut(auth).then(() => {
+                alert("You are signed out!")
+            }).catch((error) => {})
+        }
+        onAuthStateChanged(auth, (user) => {
+            if(user) {
+                alert("Welcome you are signed in!")
+
+            }else {
+            }
+        })
+
+        signInButton.addEventListener('click', userSignIn);
+        signOutButton.addEventListener('click',userSignOut);
+
+
+      </script>
+</body>
+</html>
