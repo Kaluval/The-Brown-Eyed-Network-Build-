@@ -36,8 +36,8 @@
     <script>
         function handleCredentialsResponse(response) {
             console.log(response)
-            if(response.crendential){
-              let jwt = response.crendential
+            if(response.credential){
+              let jwt = response.credential
               let user =JSON.parse(atob(jwt.split(".")[1]))
               console.log(user)
             }
