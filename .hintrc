@@ -3,7 +3,7 @@
     "development"
   ],
   "hints": {
-    "compat-api/css": "off",
+    "compat-api/css": "on",
     "disown-opener": "off",
     "css-prefix-order": "off"
   }
