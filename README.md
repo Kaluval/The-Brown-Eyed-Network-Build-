@@ -18,4 +18,4 @@ Upcoming Enhancements:
 - Improving user-friendliness and dynamism
 
 Join the B.E.N Community: Transform your music journey. Join B.E.N today!
-[Link](https://kaluval.github.io/The-Brown-Eyed-Network-Build-/)
+[Link](https://kaluval.github.io/The-Brown-Eyed-Network-Build-/index.html/)
