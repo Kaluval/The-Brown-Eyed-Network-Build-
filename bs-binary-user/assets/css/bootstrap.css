@@ -1,10 +1,4 @@
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 
-/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -65,7 +59,7 @@ h1 {
 }
 mark {
   color: #000;
-  background: #ff0;
+  background: rgb(255, 145, 0);
 }
 small {
   font-size: 80%;
@@ -288,12 +282,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  color: #ca7f42;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #967b2a;
   text-decoration: underline;
 }
 a:focus {
