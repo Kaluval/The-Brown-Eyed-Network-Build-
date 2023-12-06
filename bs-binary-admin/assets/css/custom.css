@@ -24,7 +24,7 @@ body {
 #page-wrapper {
     padding: 15px 15px;
     min-height: 600px;
-    background:#F3F3F3;
+    background:#ff6a00;
    
 }
 #page-inner {
@@ -42,7 +42,7 @@ body {
     border:1px solid #f3f3f3;
 }
 h2 {
-    color: #f00;
+    color: rgb(0, 0, 0);
 }
 h4 {
     padding-top:10px;
@@ -157,7 +157,7 @@ color:#fff;
     border-top: 0px solid #fff;
 }
      .back-footer-red {
-    background-color: #AF0000;
+    background-color: #ff7011;
     border-top: 0px solid #fff;
 }
      .color-bottom-txt {
@@ -287,7 +287,7 @@ font-weight: 700;
 	left:20px;
 	width:1px;
 	height:100%;
-	background:#ff0000;
+	background:#ff3911;
 	top:0px;
 	z-index:10;
 }
@@ -305,26 +305,26 @@ font-weight: 700;
 	
 }
 .navbar-cls-top {
-	background:#4D4D4D;
+	background:#ff3911;
 	border-bottom:none;
 	
 }
 .navbar-cls-top .navbar-brand:hover {
 
-background: #C90000;
+background: #ff7011;
 color:#fff;
 
 }
 
 .navbar-default {
-border:0px solid black;
+border:0px solid rgb(0, 0, 0);
      
 }
 .navbar-header {
-    background: #A70303;
+    background: #ff7011;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-background-color: #B40101;
+background-color: #ff7011;
 }
 .navbar-default .navbar-toggle {
 border-color: #fff;

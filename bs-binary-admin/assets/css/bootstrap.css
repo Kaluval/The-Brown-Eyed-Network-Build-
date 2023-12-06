@@ -1,10 +1,4 @@
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 
-/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -64,8 +58,8 @@ h1 {
   font-size: 2em;
 }
 mark {
-  color: #000;
-  background: #ff0;
+  color: #ffffff;
+  background: rgb(253, 163, 6);
 }
 small {
   font-size: 80%;
@@ -186,7 +180,7 @@ th {
 }
 @media print {
   * {
-    color: #000 !important;
+    color: #feaf04 !important;
     text-shadow: none !important;
     background: transparent !important;
     box-shadow: none !important;
@@ -526,7 +520,7 @@ a.text-warning:hover {
   color: #66512c;
 }
 .text-danger {
-  color: #a94442;
+  color: #ffc400;
 }
 a.text-danger:hover {
   color: #843534;
@@ -695,7 +689,7 @@ samp {
 code {
   padding: 2px 4px;
   font-size: 90%;
-  color: #c7254e;
+  color: #c7a125;
   white-space: nowrap;
   background-color: #f9f2f4;
   border-radius: 4px;
@@ -5245,7 +5239,7 @@ button.close {
   left: 50%;
   margin-left: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000;
+  border-top-color: #fcfcfc;
 }
 .tooltip.top-left .tooltip-arrow {
   bottom: 0;
