@@ -5,6 +5,12 @@
   "hints": {
     "compat-api/css": "off",
     "disown-opener": "off",
-    "css-prefix-order": "off"
+    "css-prefix-order": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "button-name": "off"
+      }
+    ]
   }
 }

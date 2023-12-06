@@ -1,8 +1,3 @@
-/*begin-commonstyles library*//*!
- * froala_editor v4.0.6 (https://www.froala.com/wysiwyg-editor)
- * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2021 Froala Labs
- */
 
 .fr-clearfix::after {
   clear: both;
@@ -20,6 +15,9 @@
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
+#signInButton {
+  background_color: transparent;
+}
 .fr-view img.fr-rounded, .fr-view .fr-img-caption.fr-rounded img {
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -1100,6 +1098,8 @@ ol {
   line-height: inherit;
   letter-spacing: inherit;
   text-transform: inherit;
+  text-decoration: none;
+
 }
 .u-text:not(ul):not(ol):not(p):not(.u-post-content):not(.u-block-content):not(.u-product-desc):not(.u-cart-block-content):not(.u-checkout-block-content) a {
   color: inherit;

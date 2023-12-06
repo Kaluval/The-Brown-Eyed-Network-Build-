@@ -35,7 +35,7 @@
       
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
-        const auth = getAuth();
+        const auth = getAuth(app);
         const analytics = getAnalytics(app);
         const provider = new GoogleAuthProvider()
 
@@ -43,11 +43,12 @@
         const signOutButton = document.getElementById("signOutButton");
         const message = document.getElementById("message");
 
-        signOutButton.style.display = "none";
+        <!-- signOutButton.style.display = "none"; -->
         message.style.display = "none";
 
+
         const userSignIn = async() => {
-            signInWithPopup(auth, provider)
+            await signInWithPopup(auth, provider)
             .then((result) => {
                 const user = result.user
                 console.log(user);
@@ -59,7 +60,7 @@
         }
 
         const userSignOut = async() => {
-            signOut(auth).then(() => {
+            await signOut(auth).then(() => {
                 alert("You are signed out!")
             }).catch((error) => {})
         }
